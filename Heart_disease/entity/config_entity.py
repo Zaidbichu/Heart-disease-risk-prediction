@@ -30,5 +30,11 @@ class Datavalidationconfig:
         self.drift_report_file_path:str=os.path.join(
             self.data_validation_dir,training_pipeline.Data_validation_drift_report_dir,training_pipeline.Data_validation_drift_report_file_name
         )
+class Datatransformationconfig:
+    def __init__(self,traininig_pipeline_config:trainingpipelineconfig):
+        self.data_transformation_dir:str=os.path.join(traininig_pipeline_config.artifact_dir,training_pipeline.Data_transforamtion_dir)
+        self.transformed_train_file_path:str=os.path.join(self.data_transformation_dir,training_pipeline.Data_transformation_tranformed_dir_name,training_pipeline.Data_tranformation_trained_file_path)
+        self.transformed_test_file_path:str=os.path.join(self.data_transformation_dir,training_pipeline.Data_transformation_tranformed_dir_name,training_pipeline.Data_transformation_test_file_path)
+        self.processor_obj_file_path:str=os.path.join(self.data_transformation_dir,training_pipeline.Data_transformation_processor_object_file_name,training_pipeline.processor_obj_file_path)
 
 

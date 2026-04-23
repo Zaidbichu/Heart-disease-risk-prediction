@@ -10,7 +10,12 @@ artifact_dir:str="artifact"
 train_file_name:str="train.csv"
 test_file_name:str="test.csv"
 file_name:str="heart_disease.csv"
+drop_colums=["num","target_binary"]
 
+numerical_columns= ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+
+categorical_columns= ['cp', 'restecg', 'slope', 'ca', 'thal']
+binary_columns:str = ['sex', 'fbs', 'exang']
 schema_file_path=os.path.join('data_schema','schema.yaml')
 ##data ingesiton constants starts with data ingestion
 Data_ingestion_dir:str="data_ingestion"
@@ -24,3 +29,11 @@ Data_validation_validated_dir:str="validated_dir"
 Data_validation_invalid_dir:str="invalid_dir"
 Data_validation_drift_report_dir:str="Drift_report"
 Data_validation_drift_report_file_name:str="report.yaml"
+
+##data transformation coinstants
+Data_transforamtion_dir:str="data_transformation"
+Data_transformation_tranformed_dir_name:str="transformed"
+Data_transformation_processor_object_file_name:str="transformed_object"
+processor_obj_file_path:str="processor.pkl"
+Data_tranformation_trained_file_path:str="trained.npy"
+Data_transformation_test_file_path:str="test.npy"
