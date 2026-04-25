@@ -36,5 +36,13 @@ class Datatransformationconfig:
         self.transformed_train_file_path:str=os.path.join(self.data_transformation_dir,training_pipeline.Data_transformation_tranformed_dir_name,training_pipeline.Data_tranformation_trained_file_path)
         self.transformed_test_file_path:str=os.path.join(self.data_transformation_dir,training_pipeline.Data_transformation_tranformed_dir_name,training_pipeline.Data_transformation_test_file_path)
         self.processor_obj_file_path:str=os.path.join(self.data_transformation_dir,training_pipeline.Data_transformation_processor_object_file_name,training_pipeline.processor_obj_file_path)
+class Modeltrainingconfig:
+    def __init__(self,training_pipeline_config:trainingpipelineconfig):
+        self.model_training_dir:str=os.path.join(training_pipeline_config.artifact_dir,training_pipeline.Model_training_dir)
+        self.train_metric_file_path:str=os.path.join(self.model_training_dir,training_pipeline.Model_training_train_metric_dir)
+        self.test_metric_file_path:str=os.path.join(self.model_training_dir,training_pipeline.Model_training_test_metric_dir)
+        self.save_model_file_path:str=os.path.join(
+            self.model_training_dir,training_pipeline.Model_trained_file_name
+        )
 
 

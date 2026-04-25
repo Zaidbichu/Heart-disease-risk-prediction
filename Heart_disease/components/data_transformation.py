@@ -81,7 +81,7 @@ from heart_disease.entity.config_entity import (
 )
 from heart_disease.components.data_ingestion import Dataingestion
 from heart_disease.components.data_validation import Datavalidation
-
+'''
 if __name__ == "__main__":
     try:
         training_pipeline_config = trainingpipelineconfig()
@@ -108,3 +108,4 @@ if __name__ == "__main__":
 
     except Exception as e:
         raise heart_disease_exception(e, sys)
+'''

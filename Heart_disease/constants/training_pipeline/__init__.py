@@ -37,3 +37,11 @@ Data_transformation_processor_object_file_name:str="transformed_object"
 processor_obj_file_path:str="processor.pkl"
 Data_tranformation_trained_file_path:str="trained.npy"
 Data_transformation_test_file_path:str="test.npy"
+
+## model training constants
+Model_training_dir:str="model_training"
+Model_trained_file_name:str="model.pkl"
+Model_training_train_metric_dir:str="train_metric"
+Model_training_test_metric_dir:str="test_metric"
+Model_trained_expected_score:float=0.6
+Model_trained_overfitting_underfitting_threshold:float=0.05
