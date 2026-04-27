@@ -1,0 +1,39 @@
+[2026-04-27 11:09:25,612] root - INFO -Data ingestion started
+[2026-04-27 11:09:25,613] root - INFO -entered the data ingestion method or component
+[2026-04-27 11:09:25,613] root - INFO -we have entered the load data method of data ingestion class
+[2026-04-27 11:09:25,613] root - INFO -we are loading the data from database
+[2026-04-27 11:09:25,677] root - INFO -we have loaded the data as dataframe
+[2026-04-27 11:09:25,677] root - INFO -we have loaded the data set as dataframe
+[2026-04-27 11:09:25,691] root - INFO -exported the data to the feature store
+[2026-04-27 11:09:25,691] root - INFO -we have exported the data to feature store
+[2026-04-27 11:09:25,691] root - INFO -now the data is ready to be splitted into train and test
+[2026-04-27 11:09:25,692] root - INFO -we are spliiting the data into train and test
+[2026-04-27 11:09:25,697] root - INFO -we have splited the data into train and test
+[2026-04-27 11:09:25,709] root - INFO -we have exported the train and test data
+[2026-04-27 11:09:25,709] root - INFO -Data ingestion completed
+[2026-04-27 11:09:25,709] root - INFO -Data validation started
+[2026-04-27 11:09:25,742] root - INFO -we have read the train data 
+[2026-04-27 11:09:25,762] root - INFO -we have read the test data
+[2026-04-27 11:09:25,767] root - INFO -we have enterd into the dataset drift part
+[2026-04-27 11:09:25,813] root - INFO -Data validation completed
+[2026-04-27 11:09:25,813] root - INFO -Data transformation started
+[2026-04-27 11:09:25,813] root - INFO -enterd the initiate data transformation part
+[2026-04-27 11:09:25,880] root - INFO -Entered the save_object method of MainUtils class
+[2026-04-27 11:09:25,881] root - INFO -Exited the save_object method of MainUtils class
+[2026-04-27 11:09:25,882] root - INFO -Data transformation completed
+[2026-04-27 11:09:25,882] root - INFO -Model training started
+[2026-04-27 11:09:25,882] root - INFO -we have entered the initate model training part
+[2026-04-27 11:09:25,882] root - INFO -we are loadding the data
+[2026-04-27 11:09:25,906] root - INFO -we have loaded the train and test file
+[2026-04-27 11:09:25,906] root - INFO -now we need to create the train test split
+[2026-04-27 11:09:25,906] root - INFO -we have enterd the model traininf part
+[2026-04-27 11:13:46,474] root - INFO -we have enterd in the classification metric
+[2026-04-27 11:13:46,484] root - INFO -we have enterd in the classification metric
+[2026-04-27 11:13:46,492] root - INFO -Entered the load_object method of MainUtils class
+[2026-04-27 11:13:46,560] root - INFO -Exited the load_object method of MainUtils class
+[2026-04-27 11:13:46,560] root - INFO -Entered the save_object method of MainUtils class
+[2026-04-27 11:13:46,569] root - INFO -Exited the save_object method of MainUtils class
+[2026-04-27 11:13:46,569] root - INFO -Entered the save_object method of MainUtils class
+[2026-04-27 11:13:46,573] root - INFO -Exited the save_object method of MainUtils class
+[2026-04-27 11:13:46,573] root - INFO -model artifact completed model_training_artifact(trained_model_file_path='artifact\\04_27_26_11_09_25\\model_training\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9734748010610079, precision_score=0.976063829787234, recall_score=0.9708994708994709), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.850828729281768, precision_score=0.8651685393258427, recall_score=0.8369565217391305))
+[2026-04-27 11:13:46,573] root - INFO -Model training completed

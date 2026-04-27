@@ -9,7 +9,7 @@ class heart_disease_model:
            self.processor=processor
         except Exception as e:
            raise heart_disease_exception(e,sys)
-    def predict_model(self,data):
+    def predict(self,data):
         try:
             x_transform=self.processor.transform(data)
             y_predict=self.model.predict(x_transform)

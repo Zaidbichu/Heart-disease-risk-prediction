@@ -79,6 +79,7 @@ class Model_training:
         processor=load_object(self.data_transformation_artifact.preprocessor_obj_file_path)
         heart_disease_model_instance=heart_disease_model(best_model,processor)
         save_object(self.model_training_config.save_model_file_path,obj=heart_disease_model_instance)
+        
     
     
         heart_disease_model_instance=heart_disease_model(best_model,processor)
